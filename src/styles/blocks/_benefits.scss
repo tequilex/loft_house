@@ -4,11 +4,14 @@
 
 .benefits__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   column-gap: 70px;
 }
 
 .benefits__item {
   text-align: center;
+  width: 150px;
 }
 
 .benefits__item-img {

@@ -1,0 +1,75 @@
+.cta {
+  padding: 180px 0;
+  background: linear-gradient(180deg, $dark 10.42%,
+  rgba(36, 43, 51, 0.00) 50.52%, $dark 90.10%), 
+  linear-gradient(0deg, rgba(36, 43, 51, 0.90) 0%, 
+  rgba(36, 43, 51, 0.90) 100%),
+  url('./../img/cta/cta-bg.jpg'), #C4C4C4;
+}
+
+.cta__title {
+  margin-bottom: 17px;
+}
+
+.cta__wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.cta__info {
+  max-width: 540px;
+  line-height: 1.5;
+}
+
+.cta__form {
+  display: flex;
+}
+
+.form {
+  // display: flex;
+}
+
+.form__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 35px;
+}
+
+.form__input {
+  background: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-size: 14px;
+  padding: 12px;
+  height: 50px;
+  width: 255px;
+  color: $accent;
+}
+
+.form__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__privacy {
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.23;
+}
+
+.form__button {
+  background-color: $accent;
+  height: 50px;
+  width: 255px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: $white;
+  text-align: center;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: saturate($accent, 10%);
+  }
+}
+
