@@ -22,4 +22,10 @@
   &--tel::before {
     background-image: url('../img/header/phone-call.svg');
   }
+
+  
+  @include tablets {
+    font-size: 15px;
+    
+  }
 }

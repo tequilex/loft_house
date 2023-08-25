@@ -8,13 +8,15 @@
 <script defer="defer" src="main.js"></script><link href="main.css" rel="stylesheet"></head>
 
 <body>
-  <header class="header">
+  <header class="header none1">
     <div class="header__top">
       <div class="container">
-        <div class="header__top-row">
+        <div class="header__top-row header__top-row--mobile">
+          
           <a href="#">
             <img src="./img/header/logo.svg" alt="LoftHouse">
           </a>
+          
           <div class="header__nav">
             <nav class="nav">
               <ul class="nav__list">
@@ -25,7 +27,14 @@
                 <li><a href="#">Контакты</a></li>
               </ul>
             </nav>
+          
           </div>
+          <div class="header__nav-btn">
+            <button class="nav-icon-btn">
+              <div class="nav-icon"></div>
+            </button>
+          </div>
+
         </div>
       </div>
     </div>
@@ -46,7 +55,8 @@
 
   </header>
 
-  <section class="benefits">
+  <main>
+    <section class="benefits none">
     <div class="container container--small">
       <ul class="benefits__list">
         <li class="benefits__item">
@@ -67,9 +77,9 @@
         </li>
       </ul>
     </div>
-  </section>
+    </section>
 
-  <section class="catalog">
+    <section class="catalog none">
     <div class="container">
 
       <div class="catalog__title">
@@ -100,9 +110,9 @@
       </div>
 
     </div>
-  </section>
+    </section>
 
-  <section class="cta">
+    <section class="cta none">
     <div class="container">
 
       <div class="cta__title">
@@ -134,18 +144,18 @@
       </div>
 
     </div>
-  </section>
+    </section>
 
-  <section class="video">
+    <section class="video none">
     <div class="container">
       <a href="#" class="video__link">
         <img src="./img/video/play-button.svg" alt="" class="video__play">
         <img src="./img/video/video_img.jpg" alt="" class="video__img">
       </a>
     </div>
-  </section>
+    </section>
 
-  <section class="section-map">
+    <section class="section-map none">
     <div class="container">
       <div class="section-map__title">
         <h2 class="title-2">Район на карте</h2>
@@ -154,9 +164,9 @@
         <div class="map" id="map"></div>
       </div>
     </div>
-  </section>
+    </section>
 
-  <section class="cta-question">
+    <section class="cta-question none">
     <div class="container">
       <div class="cta-question__title">
         <h2 class="title-2">Есть вопросы?</h2>
@@ -173,7 +183,58 @@
         </form>
       <!-- </div> -->
     </div>
-  </section>
-</body>
+    </section>
+  </main>
 
+  <footer class="footer none">
+    <div class="container">
+      <div class="footer__wrap">
+        <div class="footer__logo">
+        <a href="#">
+          <img src="./img/header/logo.svg" alt="LoftHouse">
+        </a>
+        </div>
+      <nav class="footer__inner">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <ul class="footer__links">
+              <li class="link-container"><a href="">О комплексе</a></li>
+              <li class="link-container"><a href="">Район</a></li>
+              <li class="link-container"><a href="">Каталог квартир</a></li>
+              <li class="link-container"><a href="">Ипотека</a></li>
+              <li class="link-container"><a href="">Контакты</a></li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <ul class="footer__links">
+              <li class="link-container"><a href="">Поселение и переезд</a></li>
+              <li class="link-container"><a href="">Сервисные услуги</a></li>
+              <li class="link-container"><a href="">Экологическая устойчивость</a></li>
+              <li class="link-container"><a href="">Инвестиционные возможности</a></li>
+              <li class="link-container"><a href="">Программа лояльности</a></li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <ul class="footer__links">
+              <li class="link-container">Адрес: Наб. реки Фонтанки 10-15</li>
+              <li class="link-container">Телефон: <a href="tel:+78121234567">8 (812) 123-45-67</a></li>
+              <li class="link-container">Отдел продаж: 10:00 - 20:00</li>
+              <li class="link-container">E-mail: <a href="mailto:vip@lofthouse.ru">vip@lofthouse.ru</a></li>
+            </ul>
+            <ul class="footer__socials-list">
+              <li class="footer__socials-item"><a href=""><img src="./img/footer/youtube.svg" alt=""></a></li>
+              <li class="footer__socials-item"><a href=""><img src="./img/footer/vk.svg" alt=""></a></li>
+              <li class="footer__socials-item"><a href=""><img src="./img/footer/facebook.svg" alt=""></a></li>
+              <li class="footer__socials-item"><a href=""><img src="./img/footer/instagram.svg" alt=""></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div></footer>
+
+</body>
 </html>
+
+
+

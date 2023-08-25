@@ -1,0 +1,50 @@
+.footer {
+  padding: 72px 0 51px 0;
+  background: $footer;
+  font-size: 14px;
+  letter-spacing: 0.7px
+}
+
+.footer__wrap {
+  display: flex;
+}
+
+.footer__logo {
+  min-width: 134px;
+  min-height: 66px;
+  margin-top: -12px;
+  margin-right: 151px;
+  
+}
+
+.footer__inner {
+  display: flex;
+  flex: 1;
+}
+
+.footer__list {
+  display: flex;
+  flex: 1;
+  gap: 28px;
+}
+
+.footer__item {
+  // flex: 1;
+  width: 100%;
+}
+
+.link-container {
+  margin: 15px 0;
+}
+
+.link-container:first-child {
+  margin-top: 0px;
+}
+
+.footer__socials-list {
+  display: flex;
+  margin-top: 20px;
+  gap: 21px;
+}
+
+
