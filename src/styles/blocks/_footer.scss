@@ -2,35 +2,51 @@
   padding: 72px 0 51px 0;
   background: $footer;
   font-size: 14px;
-  letter-spacing: 0.7px
+  letter-spacing: 0.7px;
+
+  @include tablets {
+  padding: 36px 0 25px 0;
+    
+  }
 }
 
 .footer__wrap {
   display: flex;
+  // flex-wrap: wrap;
+  @include tablets {
+    flex-direction: column;
+  }
 }
 
 .footer__logo {
-  min-width: 134px;
+  min-width: 160px;
   min-height: 66px;
   margin-top: -12px;
-  margin-right: 151px;
+
+  width: 30%;
   
+  @include tablets {
+    margin-bottom: 30px;
+  }
 }
 
 .footer__inner {
   display: flex;
   flex: 1;
+
 }
 
 .footer__list {
   display: flex;
   flex: 1;
   gap: 28px;
+  flex-wrap: wrap;
+
 }
 
 .footer__item {
-  // flex: 1;
-  width: 100%;
+  flex: 1;
+  // width: 100%;
 }
 
 .link-container {

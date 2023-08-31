@@ -36,6 +36,10 @@ a {
   font-family: $font-accent;
   font-size: 36px;
   font-weight: 700;
+
+  @include tablets {
+    font-size: 28px;
+  }
 }
 
 .none {

@@ -7,17 +7,31 @@
     right: calc(50% + 555px);
     transform: translate(50%, 0%);
     @include decorNumber;
+
+    @include tablets {
+      display: none;
+    }
   }
 }
 
 .catalog__title {
   margin-bottom: 88px;
+
+  @include tablets {
+    margin-bottom: 50px;
+  }
 }
 
 .catalog__list {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  // flex-wrap: wrap;
   gap: 30px;
+
+  @include tablets {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
 }
 
 .catalog__item {
@@ -58,7 +72,7 @@
 }
 
 .catalog__item:hover .catalog__item-img {
-  transform: scale(1.1);
+  transform: scale(1.2);
 
 }
 
@@ -70,4 +84,10 @@
   right: 20px;
   font-size: 24px;
   font-weight: 400;
+
+  @include tablets {
+    font-size: 20px;
+    left: 30px;
+    bottom: 20px;
+  }
 }

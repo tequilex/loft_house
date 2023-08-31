@@ -5,6 +5,10 @@
   linear-gradient(0deg, rgba(36, 43, 51, 0.90) 0%, 
   rgba(36, 43, 51, 0.90) 100%),
   url('./../img/cta/cta-bg.jpg'), #C4C4C4;
+
+  @include tablets {
+    padding: 60px 0px;
+  }
 }
 
 .cta__title {
@@ -14,19 +18,28 @@
 .cta__wrapper {
   display: flex;
   gap: 30px;
+
+  @include tablets {
+    flex-direction: column;
+  }
 }
 
 .cta__info {
-  max-width: 540px;
   line-height: 1.5;
+  flex: 1;
+
+  @include tablets {
+    font-size: 14px;
+  }
 }
 
 .cta__form {
   display: flex;
+  flex: 1;
 }
 
 .form {
-  // display: flex;
+  width: 100%;
 }
 
 .form__wrapper {
@@ -34,6 +47,10 @@
   justify-content: space-between;
   gap: 30px;
   margin-bottom: 35px;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .form__input {
@@ -42,32 +59,54 @@
   font-size: 14px;
   padding: 12px;
   height: 50px;
-  width: 255px;
+  // width: 255px;
   color: $accent;
+
+  width: 100%;
 }
 
 .form__bottom {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  @include phones {
+    flex-direction: column-reverse;
+  }
 }
 
 .form__privacy {
   font-size: 13px;
   text-align: center;
   line-height: 1.23;
+  
+
+  width: 50%;
+
+  @include phones {
+    width: 100%;
+  }
 }
 
 .form__button {
   background-color: $accent;
   height: 50px;
-  width: 255px;
+  
   padding: 12px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   color: $white;
   text-align: center;
   transition: background-color 0.2s;
 
+  width: 50%;
+
+  @include phones {
+    width: 100%;
+    font-size: 14px;
+  }
+  
   &:hover {
     background-color: saturate($accent, 10%);
   }

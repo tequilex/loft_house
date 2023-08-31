@@ -1,12 +1,17 @@
 .video {
   text-align: center;
   position: relative;
+  overflow: hidden;
 
   &::after {
     content: 'IV';
     left: calc(50% + 555px);
     transform: translate(-50%, 0%);
     @include decorNumber;
+
+    @include phones {
+      display: none;
+    }
   }
 }
 
@@ -40,6 +45,11 @@
   top: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.3s;
+
+  @include tablets {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .video__img {
