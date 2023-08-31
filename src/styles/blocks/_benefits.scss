@@ -13,6 +13,10 @@
       display: none;
     }
   }
+
+  @include tablets {
+    padding: 55px 0;
+  }
 }
 
 .benefits__list {

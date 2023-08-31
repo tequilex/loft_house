@@ -128,7 +128,7 @@
           <form action="" class="form">
             <div class="form__wrapper">
               <input type="text" class="form__input" placeholder="Ваше имя">
-              <input type="text" class="form__input" placeholder="Ваш телефон">
+              <input data-tel-input type="text" class="form__input" placeholder="Ваш телефон">
             </div>
             
             <div class="form__bottom">
@@ -148,7 +148,7 @@
 
     <section class="video none1">
     <div class="container">
-      <a href="#" class="video__link">
+      <a href="https://www.youtube.com/watch?v=HsOkBQfsIEk" data-youtubeLightbox class="video__link">
         <img src="./img/video/play-button.svg" alt="" class="video__play">
         <img src="./img/video/video_img.jpg" alt="" class="video__img">
       </a>
@@ -178,7 +178,7 @@
             И не сохраняем ваш номер в базу.
           </p>
           <input type="text" class="form__input" placeholder="Ваше имя">
-          <input type="text" class="form__input" placeholder="Ваш телефон">
+          <input data-tel-input type="text" class="form__input" placeholder="Ваш телефон">
           <button class="form__button form__button--question">Посмотреть район</button>
         </form>
       <!-- </div> -->
@@ -232,6 +232,15 @@
       </nav>
     </div>
   </footer>
+
+  <!-- YouYube LightBox -->
+  <div id="youtubelightbox" class="youtubelightbox">
+    <div class="youtubelightbox__centeredchild">
+      <div class="youtubelightbox__videowrapper">
+        <div id="youtubelightboxPlayer"></div>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
