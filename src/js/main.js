@@ -1,6 +1,6 @@
 import mask from "./libs/phoneMask/mask"
-import './libs/youtubeLightbox/youtubeLightbox.js'
-
+import './libs/yaMap/map'
+// import "./libs/youtubeLightbox/youtubeLightbox"
 
 const navBtn = document.querySelector('.nav-icon-btn')
 const iconBtn = document.querySelector('.nav-icon')
@@ -24,3 +24,5 @@ phoneInputs.forEach((input) => {
     if (input.value == '+') input.value = ''
   })
 })
+
+

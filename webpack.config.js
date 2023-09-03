@@ -22,6 +22,7 @@ module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode,
   entry: {
+    // youtubeLightbox: './js/libs/youtubeLightbox/youtubeLightbox.js',
     main: './index.js'
   },
   output: {
@@ -52,7 +53,8 @@ module.exports = {
       template: './index.html',
       minify: {
         collapseWhitespace: mode === 'production'
-      }
+      },
+      // scriptLoading: 'module'
     }),
     // new CopyWebpackPlugin({
     //   patterns: [
