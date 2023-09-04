@@ -1,10 +1,12 @@
 import mask from "./libs/phoneMask/mask"
 import './libs/yaMap/map'
-// import "./libs/youtubeLightbox/youtubeLightbox"
 
 const navBtn = document.querySelector('.nav-icon-btn')
 const iconBtn = document.querySelector('.nav-icon')
 const nav = document.querySelector('.header__top-row')
+const navMobile = document.querySelector('header__top-row--mobile')
+
+const benefits = document.querySelector('.benefits')
 
 navBtn.onclick = () => {
   iconBtn.classList.toggle('nav-icon--active');

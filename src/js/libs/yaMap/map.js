@@ -1,3 +1,5 @@
+import logo from '../../../img/map/location-pin.svg'
+
 ymaps.ready(init);
 function init() {
   
@@ -20,7 +22,7 @@ function init() {
     },
     {
       iconLayout: 'default#image',
-      iconImageHref: '../../../img/map/location-pin.svg',
+      iconImageHref: logo,
       icon_imagesize: [40, 40],
       iconImageOffset: [-20, -40]
     });

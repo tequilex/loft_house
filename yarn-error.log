@@ -1,0 +1,67 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add -D html-loader
+
+PATH: 
+  C:\Users\Tequilex\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Tequilex\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Users\Tequilex\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\EDIABAS\BIN;C:\Users\Tequilex\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\Tequilex\AppData\Local\Programs\Python\Python311;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\Tequilex\AppData\Local\Microsoft\WindowsApps;C:\Users\Tequilex\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Tequilex\AppData\Local\GitHubCLI\bin;C:\Users\Tequilex\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.17.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, copyfile 'C:\Users\Tequilex\AppData\Local\Yarn\Cache\v6\npm-html-entities-2.4.0-edd0cee70402584c8c76cc2c0556db09d1f45061-integrity\node_modules\html-entities\package.json' -> 'C:\Users\Tequilex\Desktop\lofthouse\node_modules\html-entities\package.json'
+
+npm manifest: 
+  {
+    "name": "webpack",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "dev": "cross-env NODE_ENV=development npx webpack",
+      "watch": "cross-env NODE_ENV=development npx webpack --watch",
+      "build": "cross-env NODE_ENV=production npx webpack",
+      "start": "cross-env NODE_ENV=development npx webpack-dev-server"
+    },
+    "browserslist": "> 0.25%, not dead",
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@babel/core": "^7.22.1",
+      "@babel/preset-env": "^7.22.5",
+      "@babel/preset-typescript": "^7.22.5",
+      "babel-loader": "^9.1.2",
+      "clean-webpack-plugin": "^4.0.0",
+      "copy-webpack-plugin": "^11.0.0",
+      "cross-env": "^7.0.3",
+      "css-loader": "^6.8.1",
+      "css-minimizer-webpack-plugin": "^5.0.0",
+      "html-webpack-plugin": "^5.5.1",
+      "less": "^4.1.3",
+      "less-loader": "^11.1.2",
+      "mini-css-extract-plugin": "^2.7.6",
+      "node-sass": "^9.0.0",
+      "sass-loader": "^13.3.1",
+      "style-loader": "^3.3.3",
+      "url-loader": "^4.1.1",
+      "webpack": "^5.84.1",
+      "webpack-cli": "^5.1.1",
+      "webpack-dev-server": "4.15.0",
+      "xml-loader": "^1.2.1"
+    },
+    "dependencies": {
+      "jquery": "^3.7.0",
+      "normalize.css": "^8.0.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

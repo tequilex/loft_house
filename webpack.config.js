@@ -71,6 +71,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.html$/,
+        use: 'html-loader'
+      },
+      {
         test: /\.css$/,
         use: cssLoaders()
       },
